@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+    --pink:#e679f2;
+    --darkpink:#af3b79;
+    --gray:#ada4a4;
+    --darkgray:#665f5f;
+    --white:#fff;
+    --transition:.4s ease;
+}
+
+/**************
+Basic styles
+**************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    line-height: 1.7;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.cf::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/**************
+Header
+**************/
+header {
+    background-image: url(img/header-flowers.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+}
+
+header nav {
+    padding: 30px 0;
+}
+
+header nav .logo {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.5rem;
+    float: left;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+header h1 {
+    text-align: center;
+    color: var(--pink);
+    font-size: 3.5rem;
+    padding-top: 70px;
+}
+
+header p {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.2rem;
+    padding-top: 30px;
+}
+
+header button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 40px;
+    background-color: var(--pink);
+    border: none;
+    font-size: 1.2rem;
+}
+
+header button:hover {
+    background-color: var(--darkpink);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+/**************
+About
+**************/
+.about {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+}
+
+.about h3 {
+    font-size: 1.3rem;
+    padding: 20px 0;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.about button {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 10px 40px;
+    background-color: var(--pink);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.about button:hover {
+    background-color: var(--darkpink);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+/**************
+Services
+**************/
+.services {
+    background-color: var(--pink);
+    padding: 70px 0;
+    text-align: center;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+
+.services h3 {
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.services p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.services button {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 10px 40px;
+    background-color: var(--white);
+    color: var(--darkgray);
+    border: none;
+    font-size: 1.2rem;
+}
+
+.services button:hover {
+    background-color: var(--gray);
+    color: var(--white);
+    transition: var(--transition);
+}
+
+/**************
+Footer
+**************/
+footer {
+    text-align: center;
+    padding: 70px 0;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+}
+
+footer h3 {
+    font-size: 1.3rem;
+    padding: 20px 0 20px 0;
+}
+
+footer p {
+    border: 2px dashed var(--darkgray);
+    padding: 30px;
+}
+
+/**************
+Bottom bar
+**************/
+.bottomBar {
+    text-align: center;
+    padding: 50px 0;
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+
+.bottomBar p {
+    font-size: 1.2rem;
+}
+
+/**************
+Responsive
+**************/
+@media(max-width:768px) {
+    .container {
+        width: 90%;
+    }
+    
+    header {
+        padding: 30px 15px;
+    }
+
+    header nav .logo {
+        float: none;
+        display: block;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    header nav ul {
+        float: none;
+    }
+
+    header nav ul li {
+        margin: 0 20px;
+    }
+
+    header h1 {
+        font-size: 2.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
